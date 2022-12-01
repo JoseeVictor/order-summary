@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+main{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../images/pattern-background-desktop.svg)  no-repeat;
+    background-size: contain;
+    background-color: var(--bg);
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.top img{
+    border-top-left-radius:15px ;
+    border-top-right-radius:15px ;
+}
+
+
+.card{
+    width: 400px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.bottom{
+    padding: 40px;
+}
+
+.bottom h1{
+    margin-bottom: 15px;
+    font-weight: 900;
+}
+
+.bottom .descricao{
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: var(--descricao-color);
+    font-weight: 500;
+}
+
+.valor{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    background-color: var(--valor);
+    border-radius: 10px;
+}
+
+.valor img{
+    height: 50px;
+    width: 50px;
+    margin-right: 15px;
+}
+
+.valor .plano{
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+
+
+.tipo-plano{
+    line-height: 25px;
+}
+
+.tipo-plano p{
+    font-weight: 900;
+}
+
+.valor a{
+    margin-right: 20px;
+    text-decoration: underline;
+    color: var(--button);
+    font-weight: 900;
+    font-size: 14px;
+}
+
+button{
+    background-color: var(--button);
+    color: #fff;
+    font-size: 16px;
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+button:hover{
+    opacity:0.9;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.cancel{
+    font-weight: 700;
+}
+
+.cancel:hover{
+cursor: pointer;
+}
+
+
+@media(max-width:375px){
+main{
+    background: url(../images/pattern-background-mobile.svg) no-repeat;
+    background-color: var(--bg);
+}
+
+    .card{
+        width: 320px;
+    }
+
+    .bottom{
+        padding: 20px;
+    }
+}
